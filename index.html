@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Begrepp och GitHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Begrepp och GitHub</h1>
+        <div class="box is-flex">
+          <div class="is-flex-grow-2 p-4 article">
+            <h1 class="title">GitHub Flow</h1>
+            <p class="my-2">
+              När du ska göra en ändring ska du skapa en ny branch. Den ska
+              döpas till något som beskriver ändringen, tex
+              <code>add-http-method-option</code>.
+            </p>
+            <p class="my-2">
+              Du gör dina ändringar och pushar ändringar till din branch. När
+              ändringarna är redo för att kollas igenom av andra skapar du en
+              pull request.
+            </p>
+            <p class="my-2">
+              Nu ska andra komma in och kolla igenom dina ändringar. Kommentarer
+              ska lämnas på eventuella förbättringar. Kommentarer åtgärdas med
+              nya commits, och nya kommenterar kan komma att uppstå.
+            </p>
+            <p class="my-2">
+              När det anses vara färdigt ska branchen mergas in i den riktigt
+              branchen. Den gamla branchen ska nu tas bort för att förhindra
+              förvirring.
+            </p>
+            <p class="photo-credit">Bild av GitHub</p>
+          </div>
+          <div class="is-flex-grow-1">
+            <img src="./assets/github-flow.png" class="thumbnail" />
+          </div>
+        </div>
+        <div class="box is-flex">
+          <div class="is-flex-grow-1">
+            <img src="./assets/flexbox.webp" class="thumbnail" />
+          </div>
+          <div class="is-flex-grow-2 p-4 article">
+            <h1 class="title">Flexbox</h1>
+            <p class="my-2">
+              Flexbox är en förkortning på "Flexible Box Layout". Vad det gör är
+              att element på en sida ändrar storlek och flyttar på sig till
+              storleken på användarens skärm.
+            </p>
+            <p class="my-2">
+              Flex gör så att komponenter på din sida blir större eller mindre
+              baserat på användarens skärmstorlek. Det kan även ändra ordning på
+              komponenter på din sida om komponenten riskeras bli för liten för
+              att användaren ska kunna se vad som står.
+            </p>
+            <div class="card p-4 my-2 collapsable">
+              <h1 class="title is-4 m-0">flex-direction</h1>
+              <div class="content pt-4">
+                <img src="./assets/flex-direction.svg" />
+                <p>
+                  Detta bestämmer vad som är den huvudsakliga axeln. Från början
+                  är det vänster till höger som används, men det ändras med
+                  hjälp av detta property.
+                </p>
+                <p>
+                  Det går även göra så att komponenter läggs uppifrån ner och
+                  tvärtom
+                </p>
+              </div>
+            </div>
+            <div class="card p-4 my-2 collapsable">
+              <h1 class="title is-4 m-0">flex-wrap</h1>
+              <div class="content pt-4">
+                <img src="./assets/flex-wrap.svg" />
+                <p>
+                  Från början försöker flex trycka ihop allt på en och samma
+                  rad. Om du har många komponenter kommer de bli väldigt små och
+                  bli helt oläsbara. Med flex-wrap kan du säga till flex att
+                  använda flera rader
+                </p>
+              </div>
+            </div>
+            <div class="card p-4 my-2 collapsable">
+              <h1 class="title is-4 m-0">justify-content</h1>
+              <div class="content pt-4">
+                <img src="./assets/justify-content.svg" />
+                <p>
+                  justify-content hjälper dig att lägga ut dina komponenter på
+                  din sida på olika sätt.
+                </p>
+                <p>
+                  Om du ska göra en navigation bar så passar något av
+                  <code>flex-start</code>, <code>flex-end</code> eller
+                  <code>center</code>
+                </p>
+                <p>
+                  Om du vill lägga ut större komponenter på din sida, passar
+                  något utav <code>space-between</code>,
+                  <code>space-around</code> och <code>space-evenly</code>
+                </p>
+              </div>
+            </div>
+            <p class="photo-credit">Bilder av CSS Tricks</p>
+          </div>
+        </div>
+        <div class="box is-flex">
+          <div class="is-flex-grow-2 p-4 article content">
+            <h1 class="title">DOM</h1>
+            <p class="my-2">
+              DOM, eller Document Object Model, är det som tillåter dig
+              interagera med dokumentet som användaren ser från kod.
+            </p>
+            <p>
+              <code> &#x3C;p id="min-text"&#x3E;Hej!&#x3C;/p&#x3E;</code>
+            </p>
+            <p>
+              Om du skulle vilja ändra <code>Hej!</code> till
+              <code>Hej Världen!</code>, så kan du göra det med hjälp av DOM
+            </p>
+            <p>
+              <code>
+                document.getElementById('min-text').innerText = 'Hej Världen!';
+              </code>
+            </p>
+            <p class="photo-credit">Bild av Birger Eriksson</p>
+          </div>
+          <div class="is-flex-grow-1">
+            <img src="./assets/dom-model.svg" class="thumbnail" />
+          </div>
+        </div>
+        <div class="box is-flex">
+          <div class="is-flex-grow-1">
+            <img src="./assets/fin-kod.png" class="thumbnail" />
+          </div>
+          <div class="is-flex-grow-2 p-4 article content">
+            <h1 class="title">Fin Kod</h1>
+            <p class="my-2">
+              Om du behöver skapa ett projekt som har mer än ett par rader kod
+              BEHÖVER du göra den fin. Om koden inte är strukturerad så kommer
+              du och andra som jobbar på projektet inte kunna hitta i projektet.
+            </p>
+            <p class="my-2">
+              För att koden ska vara fin krävs flera olika saker. Här är några
+              av dem
+            </p>
+            <div class="card p-4 my-2 collapsable">
+              <h1 class="title is-4 m-0">Formaterad kod</h1>
+              <div class="content pt-4">
+                <p>
+                  Bilden till vänster visar kod som är indenterad, så att kod
+                  som är innanför ett par klammerparentes är ett snäpp in
+                </p>
+                <p>
+                  Det finns även mellanslag emellan olika komponenter i koden,
+                  som gör det lättare att separera dem
+                </p>
+              </div>
+            </div>
+            <div class="card p-4 my-2 collapsable">
+              <h1 class="title is-4 m-0">
+                Bra namn på variablar och funktioner
+              </h1>
+              <div class="content pt-4">
+                <p>
+                  Variablar eller funktioner som heter <code>aaaa</code> ger
+                  inte en snabb överblick av vad den innehåller. Om det finns
+                  mer en ett par variablar blir det snart väldigt svårt att
+                  hålla koll på vad som innehåller vad.
+                </p>
+                <p>
+                  Om variablar inte har ett bra namn kommer det leda till
+                  förvirring. Även om du just nu vet exakt vad den innehåller
+                  kommer du glömma väldigt snart, och du kommer behöva gå igenom
+                  din kod för att veta vad den innehåller
+                </p>
+              </div>
+            </div>
+            <div class="card p-4 my-2 collapsable">
+              <h1 class="title is-4 m-0">Kod på rätt ställe</h1>
+              <div class="content pt-4">
+                <p>
+                  När ett projekt blir större än 1 fil behöver du sortera koden
+                  till rätt ställe. Funktioner och variablar måste vara på
+                  logiska ställen, annars kommer du och andra spendera mycket
+                  tid på att leta efter något.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box is-flex">
+          <div class="is-flex-grow-1">
+            <img src="./assets/vue.png" class="thumbnail" />
+          </div>
+          <div class="is-flex-grow-2 p-4 article content">
+            <h1 class="title">Ramverk</h1>
+            <p>
+              För att göra större projekt behöver du använda ett ramverk för att
+              behålla ett sunt sinne. Ramverk gör ditt arbete mer abstrakt genom
+              att göra mycket åt dig. Du behöver inte hålla koll på hur saker
+              fungerar på en lägre nivå, eftersom att ramverket sköter det åt
+              dig.
+            </p>
+            <p class="photo-credit">Bild från Vuejs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
